@@ -1,0 +1,14 @@
+[
+{ "model": "auth.user",
+    "pk": 1,
+    "fields":{
+        "username": "zayyad",
+        "password": "pbkdf2_sha256$260000$K9AIsCvRDrzf3f2lSBeKC3$/w6kmHHVO/aXsgT/SBJLQizxpSOB0YogDz7BgP7skb0=",
+        "email": "z@z.com",
+        "is_superuser": true,
+        "is_staff": true,
+        "is_active": true
+    }
+    
+}
+]
