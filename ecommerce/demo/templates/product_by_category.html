@@ -6,6 +6,8 @@
     {% for x in product %}
 
     <li>{{ x.name }}</li>
+    <li>{{ x.id }}</li>
+    <li>Price: #{{ x.product__store_price }}</li>
     {% endfor %}
 
 </ul>

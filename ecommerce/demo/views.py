@@ -15,8 +15,8 @@ def category(request):
 
 
 def product_by_category(request, category):
-
-    product = models.Product.objects.filter(category__name=category)
+    print(category)
+    product = models.Product.objects.filter(category__name=category).filter(product__is_default=True).values("id","name","slug","category__name","product__store_price")
     print(product)
 
     return render(request, "product_by_category.html",{"product":product})
